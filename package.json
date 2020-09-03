@@ -46,7 +46,7 @@
             "commandPalette": [
                 {
                     "command": "fluent-terminal.open",
-                    "when": "false"
+                    "when": "isWindows"
                 }
             ],
             "explorer/context": [
