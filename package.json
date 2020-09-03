@@ -38,22 +38,22 @@
         "commands": [
             {
                 "command": "fluent-terminal.open",
-                "title": "Open",
-                "category": "Windows Terminal"
+                "title": "Open in Fluent Terminal",
+                "category": "Fluent Terminal"
             }
         ],
         "menus": {
             "commandPalette": [
                 {
-                    "command": "windows-terminal.open",
-                    "when": "isWindows"
+                    "command": "fluent-terminal.open",
+                    "when": "false"
                 }
             ],
             "explorer/context": [
                 {
-                    "command": "windows-terminal.open",
+                    "command": "fluent-terminal.open",
                     "group": "navigation@31",
-                    "when": "true"
+                    "when": "isWindows && config.terminal.explorerKind == 'integrated'"
                 }
             ]
         }
